@@ -1,3 +1,8 @@
+// SPDX-License-Identifier: GPL-3.0-or-later
+/*
+ * Copyright (c) 2026 LinXing0926. All rights reserved.
+ */
+
 #include "declarations_shared.hpp"
 
 #include <dlfcn.h>
@@ -24,7 +29,8 @@ bool release_repairs_install() {
         !host_mode_repair_prepare(&transaction) ||
         !playerdata_repair_prepare(&transaction) ||
         !tribe_repair_prepare(&transaction) ||
-        !tutorial_repair_prepare(&transaction)) {
+        !tutorial_repair_prepare(&transaction) ||
+        !actor_lifetime_repair_prepare(&transaction)) {
         relay_pool_reset();
         ASX_LOGE("release repair preparation failed; no instruction was patched");
         return false;

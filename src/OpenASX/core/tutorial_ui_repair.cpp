@@ -1,4 +1,9 @@
-#include "declarations_shared.hpp"
+// SPDX-License-Identifier: GPL-3.0-or-later
+/*
+ * Copyright (c) 2026 LinXing0926. All rights reserved.
+ */
+
+ #include "declarations_shared.hpp"
 
 namespace asx {
 

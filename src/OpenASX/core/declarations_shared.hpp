@@ -1,4 +1,9 @@
-#pragma once
+// SPDX-License-Identifier: GPL-3.0-or-later
+/*
+ * Copyright (c) 2026 LinXing0926. All rights reserved.
+ */
+
+ #pragma once
 
 #include <android/log.h>
 #include <link.h>
@@ -110,5 +115,6 @@ bool host_mode_repair_prepare(PatchTransaction* transaction);
 bool playerdata_repair_prepare(PatchTransaction* transaction);
 bool tribe_repair_prepare(PatchTransaction* transaction);
 bool tutorial_repair_prepare(PatchTransaction* transaction);
+bool actor_lifetime_repair_prepare(PatchTransaction* transaction);
 
 }  // namespace asx
